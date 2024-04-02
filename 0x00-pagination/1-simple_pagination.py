@@ -2,8 +2,6 @@ import csv
 import math
 from typing import List
 
-index_range = __import__('0-simple_helper_function').index_range
-
 
 class Server:
     """Server class to paginate a database of popular baby names.
@@ -31,3 +29,19 @@ class Server:
         assert page_size > 0
         start, end = index_range(page, page_size)
         return self.dataset()[start:end]
+
+
+def index_range(page: int, page_size: int) -> tuple:
+    """Returns a tuple containing a start index and an end
+    index corresponding to the parameters
+
+    Args:
+        page (int): start index
+        page_size (int): end index
+
+    Returns:
+        tuple:
+    """
+    start_idx = (page_size * page) - page_size
+    end_idx = page_size * page
+    return (start_idx, end_idx)
