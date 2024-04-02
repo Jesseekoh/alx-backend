@@ -1,8 +1,8 @@
+#!/usr/bin/env python3
+"""1-0-simple_helper_function module"""
 import csv
 import math
 from typing import List
-
-"""1-0-simple_helper_function module"""
 
 
 class Server:
