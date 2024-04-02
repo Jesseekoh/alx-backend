@@ -27,7 +27,10 @@ class Server:
         assert type(page_size) is int
         assert page > 0
         assert page_size > 0
+        file_size = len(self.dataset())
         start, end = index_range(page, page_size)
+        if start >= file_size:
+            return []
         return self.dataset()[start:end]
 
 
