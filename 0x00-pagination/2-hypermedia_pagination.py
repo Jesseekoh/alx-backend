@@ -55,7 +55,6 @@ class Server:
         else:
             next_page = page + 1
 
-        # next_page = None
         total_pages = math.ceil(file_size / page_size)
         prev_page = page - 1
         if prev_page < 1:

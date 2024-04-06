@@ -9,6 +9,7 @@ class FIFOCache(BaseCaching):
     """FIFOCache class"""
 
     def __init__(self):
+        """init"""
         super().__init__()
         self.key_list = []
 
