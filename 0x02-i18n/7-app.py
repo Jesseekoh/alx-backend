@@ -3,12 +3,8 @@
 Use user locale
 """
 
-from crypt import methods
-from email import header
 
-import babel
 import pytz
-import requests
 from flask import Flask, g, render_template, request
 from flask_babel import Babel
 
