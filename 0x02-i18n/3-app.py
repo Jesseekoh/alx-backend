@@ -2,8 +2,6 @@
 """
 Parametrize templates
 """
-
-import babel
 from flask import Flask, render_template, request
 from flask_babel import Babel
 
