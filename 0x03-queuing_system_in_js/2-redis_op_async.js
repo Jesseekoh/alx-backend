@@ -12,7 +12,7 @@ const setNewSchool = (schoolName, value) => {
 };
 
 const displaySchoolValue = async (schoolName) => {
-  console.log(await promisify(client.get).bind(client)(schoolName));;
+  console.log(await promisify(client.get).bind(client)(schoolName));
 };
 
 async function main () {
